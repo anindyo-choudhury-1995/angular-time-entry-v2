@@ -1,0 +1,5 @@
+<app-date-input [startDate]="selectedDay" (selectedDate)="selectedDateInputTracker($event)"></app-date-input>
+<app-hour-display></app-hour-display>
+<app-day-tracker [selectedDay]="selectedDay" (selectedDate)="selectedDateDayTracker($event)"></app-day-tracker>
+<app-item-list [sRNumbers]="sRNumbers" [taskTypes]="taskTypes" [deliveryTypes]="deliveryTypes" [listItems]="listItems" ></app-item-list>
+<app-add-request (addItem)="addItem($event)"></app-add-request>
